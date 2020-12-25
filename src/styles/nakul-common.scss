@@ -1,0 +1,85 @@
+.nakul-logo {
+    width: 20vw;
+    display: flex;
+    margin-left: $left-sidebar-left-margin;
+  }
+  
+  .nakul-black-button {
+    height: 32px;
+    max-width: 100px;
+    background-color: #201D22;
+    border-radius: 8px;
+    color: #FFFEFC;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .nakul-row {
+    display: flex; 
+    flex-direction:row;
+  }
+  
+  .nakul-top-right-div {
+    float: right;
+    margin-right: 10vw;
+    margin-top: 1vh;
+  }
+  
+  .nakul-input-margin {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .nakul-create-post {
+    width: 18vw;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2vh;
+    margin-bottom: 1vh;
+    max-height: 20vh;
+    padding: 1vh;
+
+  }
+
+  .color-gray {
+    color: gray;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 800;
+  }
+
+  .modal-main {
+    position:fixed;
+    background: $nakul-bg-color;
+    width: 20%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 3vh;
+    border-radius: 2vh;
+    z-index: 1000;
+  }
+
+  .nakul-body {
+    margin-left: $left-sidebar-left-margin
+  }
+
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }

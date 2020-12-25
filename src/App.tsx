@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import * as routes from './const/routes';
+import { Home } from './Home';
+import { SideBar } from './Sidebar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class AppComponent extends React.Component {
+  constructor(props: any) {
+    super(props);
+
+  }
+
+  public render() {
+
+    return (
+
+      <BrowserRouter>
+
+        <div className="nakul-row">
+          {/* <HeaderNav /> */}
+          <div>
+
+            <SideBar />
+
+          </div>
+          <div>
+            <Switch>
+              {/* <Route exact={true} path={routes.PROJECT} component={ProjectList} /> */}
+              <Route exact={true} path={routes.HOME} component={Home} />
+              {/* <Route exact={true} path="/project/:projectName" component={Project} /> */}
+            </Switch>
+
+          </div>
+        </div>
+      </BrowserRouter>
+
+    );
+  }
+
+
 }
 
-export default App;
+export const App = AppComponent;

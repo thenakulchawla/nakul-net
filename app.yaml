@@ -1,0 +1,22 @@
+runtime: nodejs12
+
+#env_variables:
+#  # Replace the variables
+#  FIREBASE_APIKEY: <FIREBASE_APIKEY>
+#  FIREBASE_AUTHDOMAIN: <FIREBASE_AUTHDOMAIN>
+#  FIREBASE_DATABASEURL: <FIREBASE_DATABASEURL>
+#  FIREBASE_PROJECTID: <FIREBASE_PROJECTID>
+#  FIREBASE_STORAGEBUCKET: <FIREBASE_STORAGEBUCKET>
+#  FIREBASE_MESSAGINGSENDERID: <FIREBASE_MESSAGINGSENDERID>
+#  FIREBASE_APPID: <FIREBASE_APPID>
+#  FIREBASE_MEASUREMENTID: <FIREBASE_MEASUREMENTID>
+
+handlers:
+  - url: /static
+    static_dir: build/static
+  - url: /(.*\.(json|ico|js))$
+    static_files: build/\1
+    upload: build/.*\.(json|ico|js)$
+  - url: .*
+    static_files: build/index.html
+    upload: build/index.html
