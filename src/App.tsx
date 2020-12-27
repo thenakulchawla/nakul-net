@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as routes from './const/routes';
+import HeaderNav from './HeaderNav';
 import { Home } from './Home';
 import { SideBar } from './Sidebar';
 
@@ -15,9 +16,11 @@ class AppComponent extends React.Component {
     return (
 
       <BrowserRouter>
+        {/* <div>
+          <HeaderNav />
+        </div> */}
 
         <div className="nakul-row">
-          {/* <HeaderNav /> */}
           <div>
 
             <SideBar />

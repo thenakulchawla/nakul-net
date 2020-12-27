@@ -83,3 +83,12 @@
   .display-none {
     display: none;
   }
+
+  .profile-image {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 20vh;
+    overflow: "hidden";
+    border-width: 3;
+    border-color: "red";
+  }

@@ -8,9 +8,10 @@ class HomeComponent extends React.Component {
 
     render() {
         return (
-            <div className="nakul-body">
-                <p> Hello World</p>
-
+            <div>
+                <div className="nakul-body">
+                    <img className="profile-image" src={"android-chrome-192x192.png"} alt={""} />
+                </div>
             </div>
         )
     }
