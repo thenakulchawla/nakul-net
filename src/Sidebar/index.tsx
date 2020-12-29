@@ -24,7 +24,7 @@ const SideBarComponent = () => {
                         <div className="sidebar-item-content">
                             <Link to={routes.PROJECT} style={{ textDecoration: 'none' }}>
                                 <div className="sidebar-item-text">
-                                    Project
+                                    Projects
                                 </div>
                             </Link>
                         </div>
@@ -36,4 +36,4 @@ const SideBarComponent = () => {
 
 }
 
-export const SideBar = SideBarComponent;;
+export const SideBar = SideBarComponent;

@@ -73,7 +73,8 @@
   }
 
   .nakul-body {
-    margin-left: $left-sidebar-left-margin
+    margin-left: $left-sidebar-left-margin;
+    margin-top: $sidebar-margin-top;
   }
 
   .display-block {
@@ -92,3 +93,73 @@
     border-width: 3;
     border-color: "red";
   }
+
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20vh;
+    margin-left: -10vw;
+  }
+
+  .nakul-footer {
+    height: 10vh;
+    width: 100%;
+    position:absolute;
+    left: 40%;
+    bottom:0;
+    right:0;
+    font-family: $fontMonospace;
+  }
+
+.footer-container {
+    grid-column-start: inner-start;
+    grid-column-end: inner-end;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container p {
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    font-size: 14px;
+    margin-left: -22px;
+}
+
+.logo-container img {
+    margin-top: 20px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.social-container div {
+    cursor: pointer;
+}
+
+.icon {
+  padding-top: 1vh;
+  padding: 1vh;
+  cursor: pointer;
+}
+
+.icons {
+  margin-top: 2vh;
+}
