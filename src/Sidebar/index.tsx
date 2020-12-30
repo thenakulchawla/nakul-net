@@ -30,6 +30,29 @@ const SideBarComponent = () => {
                         </div>
                     </ListItem>
                 </div>
+                <div className="sidebar-item">
+                    <ListItem key='project' button>
+                        <div className="sidebar-item-content">
+                            <Link to={routes.PROJECT} style={{ textDecoration: 'none' }}>
+                                <div className="sidebar-item-text">
+                                    Projects
+                                </div>
+                            </Link>
+                        </div>
+                    </ListItem>
+                </div>
+                <div className="sidebar-item">
+                    <ListItem key='project' button>
+                        <div className="sidebar-item-content">
+                            <Link to={routes.PROJECT} style={{ textDecoration: 'none' }}>
+                                <div className="sidebar-item-text">
+                                    Projects
+                                </div>
+                            </Link>
+                        </div>
+                    </ListItem>
+                </div>
+
             </List>
         </div>
     );
