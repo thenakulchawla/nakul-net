@@ -8,7 +8,7 @@
     color: #201D22;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: right;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(32, 29, 34, 0.1);
     margin-bottom: 1vh;
@@ -30,3 +30,9 @@
     font-size: 14px;
     cursor: pointer;
 }
+
+.header-item-text {
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+  }

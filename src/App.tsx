@@ -17,9 +17,9 @@ class AppComponent extends React.Component {
     return (
 
       <BrowserRouter>
-        {/* <div>
+        <div>
           <HeaderNav />
-        </div> */}
+        </div>
 
         <div className="nakul-row">
           <div>
