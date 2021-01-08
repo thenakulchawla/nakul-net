@@ -80,37 +80,96 @@
   .display-block {
     display: block;
   }
+
+  .display-inline-block {
+    display: inline-block;
+  }
   
   .display-none {
     display: none;
   }
 
   .profile-image {
-    width: 20vh;
-    height: 20vh;
-    border-radius: 20vh;
-    overflow: "hidden";
-    border-width: 3;
-    border-color: "red";
+    width: 125px;
+    margin-bottom: 25px;
+    border-radius: 100%;
+    transition: all .2s;
+    box-shadow: 0;
+    opacity: 1;
   }
 
+  /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .centered {
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      margin-top: -200px;
+      margin-left: -200px;
+    }
+  }
+
+  /* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
   .centered {
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    margin-top: -20vh;
-    margin-left: -10vw;
+    margin-top: -60px;
+    margin-left: -50px;
+  }
+}
+
+ /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .icons-centered {
+      position: fixed;
+      left: 50%;
+      margin-left: -220px;
+      margin-top: 2px;
+    }
   }
 
-  .nakul-footer {
-    height: 10vh;
-    width: 100%;
-    position:absolute;
-    left: 40%;
-    bottom:0;
-    right:0;
-    font-family: $fontMonospace;
+  /* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .icons-centered {
+    position: fixed;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: 3px;
   }
+}
+
+ /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .nakul-footer {
+      height: 8vh;
+      width: 100%;
+      position: fixed;
+      left: 50%;
+      margin-left: -220px;
+      bottom:0;
+      font-family: $fontMonospace;
+    }
+  }
+
+    /* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+
+  .nakul-footer {
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    font-family: $fontMonospace;
+    margin-left: -70px;
+    left: 50%
+  }
+
+}
 
 .footer-container {
     grid-column-start: inner-start;
@@ -155,11 +214,7 @@
 }
 
 .icon {
-  padding-top: 1vh;
-  padding: 1vh;
+  padding-top: 3px;
+  padding: 3px;
   cursor: pointer;
-}
-
-.icons {
-  margin-top: 2vh;
 }

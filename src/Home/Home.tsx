@@ -3,8 +3,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import { Facebook, LinkedIn, Mail, Twitter } from '@material-ui/icons';
 import { Icon } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import * as routes from '../const/routes';
-
+import * as routes from '../const/routes'
+import { Footer } from '../Footer';
 
 
 class HomeComponent extends React.Component {
@@ -50,12 +50,15 @@ class HomeComponent extends React.Component {
 
     render() {
         return (
-            <div className="centered">
+            <div className="centered display-inline-block">
                 <div >
                     <img className="profile-image" src={"android-chrome-192x192.png"} alt={"profile picture"} />
                 </div>
+                <div>
+                    <h2>Nakul Chawla</h2>
+                </div>
 
-                <div className="nakul-row icons">
+                <div className="nakul-row icons-centered">
                     <div className="icon" onClick={this.navigateToLinkedin}>
                         <LinkedIn />
                     </div>
@@ -75,12 +78,11 @@ class HomeComponent extends React.Component {
                         <Icon className="fa fa-stack-overflow fa-lg" />
                     </div>
                 </div>
-                {/* <Link to={routes.RESUME} style={{ textDecoration: 'none' }}>
-                    <div className="header-item-text">
-                        <p>Resume</p>
-                    </div>
-                </Link> */}
-            </div>
+
+                <Footer />
+
+
+            </div >
         )
     }
 }

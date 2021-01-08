@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import * as routes from '../const/routes';
 
 class ResumeSideBarComponent extends React.Component {
     constructor(props: any) {
@@ -12,10 +14,12 @@ class ResumeSideBarComponent extends React.Component {
             <div className="sidebar-wrapper" >
 
 
-                <div className="profile-container" >
-                    <img className="profile-img" src={"android-chrome-192x192.png"} alt="profile picture" />
-                    <h3 className="name">Nakul Chawla</h3>
-                </div>
+                <Link to={routes.HOME} style={{ textDecoration: 'none' }}>
+                    <div className="profile-container" >
+                        <img className="profile-img" src={"android-chrome-192x192.png"} alt="profile picture" />
+                        <h3 className="name">Nakul Chawla</h3>
+                    </div>
+                </Link>
 
                 <div className="contact-container container-block">
                     <ul className="list-unstyled contact-list">
