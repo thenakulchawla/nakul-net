@@ -6,11 +6,6 @@ const HeaderNavNonAuth = () => {
 
     return (
         <div className='nakul-header'>
-            {/* <Link to={routes.HOME}>
-                <div className='nakul-logo'>
-                    <img src="favicon-32x32.png" alt={''} />
-                </div>
-            </Link> */}
             <div>
 
             </div>
@@ -24,9 +19,15 @@ const HeaderNavNonAuth = () => {
                 </Link>
 
 
-                <Link to={routes.PROJECT} style={{ textDecoration: 'none' }}>
+                {/* <Link to={routes.PROJECT} style={{ textDecoration: 'none' }}>
                     <div className="header-item-text">
                         <p>Projects</p>
+                    </div>
+                </Link> */}
+
+                <Link to={routes.RESUME} style={{ textDecoration: 'none' }}>
+                    <div className="header-item-text">
+                        <p>Resume</p>
                     </div>
                 </Link>
 

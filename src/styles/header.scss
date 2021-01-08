@@ -4,7 +4,7 @@
     height: $header-height;
     width: 100%;
     background-color: #FFFEFC;
-    position: relative;
+    position: fixed;
     color: #201D22;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(32, 29, 34, 0.1);
     margin-bottom: 1vh;
-    margin-top: 0px;
+    top: 0px;
 }
 
 .header-action {
@@ -35,4 +35,7 @@
     font-weight: bold;
     color: black;
     padding: 5px;
+    font-size: 18px;
+    font-family: $fontMonospace;
+
   }

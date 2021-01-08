@@ -2,6 +2,8 @@ import React from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Facebook, LinkedIn, Mail, Twitter } from '@material-ui/icons';
 import { Icon } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import * as routes from '../const/routes';
 
 
 
@@ -46,14 +48,13 @@ class HomeComponent extends React.Component {
         this.openInNewTab("mailto:msg@nakul.net")
     }
 
-
-
     render() {
         return (
             <div className="centered">
                 <div >
-                    <img className="profile-image" src={"android-chrome-192x192.png"} alt={""} />
+                    <img className="profile-image" src={"android-chrome-192x192.png"} alt={"profile picture"} />
                 </div>
+
                 <div className="nakul-row icons">
                     <div className="icon" onClick={this.navigateToLinkedin}>
                         <LinkedIn />
@@ -74,6 +75,11 @@ class HomeComponent extends React.Component {
                         <Icon className="fa fa-stack-overflow fa-lg" />
                     </div>
                 </div>
+                {/* <Link to={routes.RESUME} style={{ textDecoration: 'none' }}>
+                    <div className="header-item-text">
+                        <p>Resume</p>
+                    </div>
+                </Link> */}
             </div>
         )
     }
