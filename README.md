@@ -53,3 +53,21 @@ docker run -it --rm -p 1100:80 nakul-net
 the page will be availble on `localhost:1100`
 
 
+## Running on remote server
+
+Use the file `deploytoPi.sh`
+
+In the file change the server username and password from `ubuntu@192.168.86.81` to `yourusername@ipaddress`
+
+Make sure `node` is installed on the server.
+Make sure `serve` is installed on the server.
+
+To install serve use the below command
+
+```
+npm install -g serve
+```
+
+If the above command doesn't have permissoin to write, use it with `sudo`.
+
+
