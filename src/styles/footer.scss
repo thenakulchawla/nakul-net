@@ -5,40 +5,102 @@
       height: 8vh;
       width: 100%;
       position: fixed;
-      bottom:0;
+      bottom: 0;
       font-family: $fontMonospace;
       margin-left: -70px;
       left: 50%
     }
   
-  }
-  
-  .footer-container {
-      grid-column-start: inner-start;
-      grid-column-end: inner-end;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center;
-  }
+}
 
-  /* Small devices (tablets, 768px and up) */
- /* Medium devices (desktops, 992px and up) */
- @media (min-width: 992px) {
+// Custom, iPhone Retina 
+@media only screen and (min-width : 20em) {
+
     .nakul-footer {
-      height: 8vh;
-      width: 100%;
-      position: fixed;
-      left: 50%;
-      margin-left: -220px;
-      bottom:0;
-      font-family: $fontMonospace;
-    }
-  }
+        height: 8vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        font-family: $fontMonospace;
+        margin-left: -70px;
+        left: 50%
+      }
 
+}
+
+// Extra Small Devices, Phones 
+@media only screen and (min-width : 30em) {
+
+    .nakul-footer {
+        height: 8vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        font-family: $fontMonospace;
+        margin-left: -70px;
+        left: 50%
+      }
+
+}
+
+// Small Devices, Tablets
+@media only screen and (min-width : 48em) {
+
+    .nakul-footer {
+        height: 8vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        font-family: $fontMonospace;
+        margin-left: -70px;
+        left: 50%
+      }
+
+
+}
+
+// Medium Devices, Desktops
+@media only screen and (min-width : 62em) {
+
+    .nakul-footer {
+        height: 8vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        font-family: $fontMonospace;
+        margin-left: -70px;
+        left: 50%
+      }
+
+}
+
+// Large Devices, Wide Screens
+@media only screen and (min-width : 75em) {
+
+    .nakul-footer {
+        height: 8vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        font-family: $fontMonospace;
+        margin-left: -70px;
+        left: 50%
+      }
+
+}
+
+  
+.footer-container {
+    grid-column-start: inner-start;
+    grid-column-end: inner-end;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
   
   .footer-container p {
       cursor: pointer;
