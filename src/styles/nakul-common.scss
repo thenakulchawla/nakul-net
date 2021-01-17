@@ -103,10 +103,10 @@
   @media (min-width: 992px) {
     .centered {
       position: fixed;
-      top: 40%;
-      left: 50%;
-      margin-top: -200px;
-      margin-left: -200px;
+      top: 10%;
+      left: 40%;
+      margin-top: auto;
+      margin-left: auto;
     }
   }
 
@@ -114,10 +114,10 @@
 @media (max-width: 767px) {
   .centered {
     position: fixed;
-    top: 30%;
-    left: 50%;
-    margin-top: -60px;
-    margin-left: -50px;
+    top: 10%;
+    left: 40%;
+    margin-top: auto;
+    margin-left: auto;
   }
 }
 
@@ -126,9 +126,9 @@
   @media (min-width: 992px) {
     .icons-centered {
       position: fixed;
-      left: 50%;
-      margin-left: -220px;
-      margin-top: 2px;
+      left: 39%;
+      margin-top: auto;
+      margin-left: auto;
     }
   }
 
@@ -136,14 +136,14 @@
 @media (max-width: 767px) {
   .icons-centered {
     position: fixed;
-    left: 50%;
-    margin-left: -70px;
-    margin-top: 3px;
+    left: 39%;
+    margin-top: auto;
+    margin-left: auto;
   }
 }
 
  /* Small devices (tablets, 768px and up) */
-  /* Medium devices (desktops, 992px and up) */
+ /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
     .nakul-footer {
       height: 8vh;
@@ -156,7 +156,7 @@
     }
   }
 
-    /* Extra small devices (phones, less than 768px) */
+/* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
   .nakul-footer {
