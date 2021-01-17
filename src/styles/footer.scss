@@ -1,0 +1,45 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+
+    .nakul-footer {
+      height: 8vh;
+      width: 100%;
+      position: fixed;
+      bottom:0;
+      font-family: $fontMonospace;
+      margin-left: -70px;
+      left: 50%
+    }
+  
+  }
+  
+  .footer-container {
+      grid-column-start: inner-start;
+      grid-column-end: inner-end;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+  }
+
+  /* Small devices (tablets, 768px and up) */
+ /* Medium devices (desktops, 992px and up) */
+ @media (min-width: 992px) {
+    .nakul-footer {
+      height: 8vh;
+      width: 100%;
+      position: fixed;
+      left: 50%;
+      margin-left: -220px;
+      bottom:0;
+      font-family: $fontMonospace;
+    }
+  }
+
+  
+  .footer-container p {
+      cursor: pointer;
+  }

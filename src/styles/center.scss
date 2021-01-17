@@ -1,0 +1,99 @@
+
+// Custom, iPhone Retina 
+@media only screen and (min-width : 20em) {
+
+    .centered {
+        position: fixed;
+        top: 10%;
+        left: 30%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+    .icons-centered {
+        position: fixed;
+        left: 29%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+}
+
+// Extra Small Devices, Phones 
+@media only screen and (min-width : 30em) {
+
+    .centered {
+        position: fixed;
+        top: 10%;
+        left: 30%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+    .icons-centered {
+        position: fixed;
+        left: 29%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+}
+
+// Small Devices, Tablets
+@media only screen and (min-width : 48em) {
+
+    .centered {
+        position: fixed;
+        top: 15%;
+        left: 40%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+    .icons-centered {
+        position: fixed;
+        left: 39%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+
+}
+
+// Medium Devices, Desktops
+@media only screen and (min-width : 62em) {
+    .centered {
+        position: fixed;
+        top: 15%;
+        left: 40%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+    .icons-centered {
+        position: fixed;
+        left: 39%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+}
+
+// Large Devices, Wide Screens
+@media only screen and (min-width : 75em) {
+    .centered {
+        position: fixed;
+        top: 15%;
+        left: 40%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+    .icons-centered {
+        position: fixed;
+        left: 39%;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+}
