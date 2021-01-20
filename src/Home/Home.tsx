@@ -2,8 +2,6 @@ import React from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Facebook, LinkedIn, Mail, Twitter } from '@material-ui/icons';
 import { Icon } from '@material-ui/core';
-import { Link } from 'react-router-dom';
-import * as routes from '../const/routes'
 import { Footer } from '../Footer';
 
 

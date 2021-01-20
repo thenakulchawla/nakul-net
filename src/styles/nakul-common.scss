@@ -6,6 +6,12 @@
     width: 20vw;
     display: flex;
     margin-left: $left-sidebar-left-margin;
+    cursor: pointer;
+    padding: 5px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center
   }
   
   .nakul-black-button {
