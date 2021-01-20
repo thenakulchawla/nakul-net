@@ -12,8 +12,6 @@ class ResumeSideBarComponent extends React.Component {
 
         return (
             <div className="sidebar-wrapper" >
-
-
                 <Link to={routes.HOME} style={{ textDecoration: 'none' }}>
                     <div className="profile-container" >
                         <img className="profile-img" src={"android-chrome-192x192.png"} alt="profile picture" />

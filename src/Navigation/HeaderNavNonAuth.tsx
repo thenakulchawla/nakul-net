@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as routes from '../const/routes';
 import HamburgerMenu from 'react-hamburger-menu';
+import { SideBar } from './SideBar';
 
-interface HeaderNavNonAuthState {
+interface NavigationAuthState {
     open: boolean;
 }
 
-class HeaderNavNonAuth extends React.Component<{}, HeaderNavNonAuthState> {
+class NavigationNonAuth extends React.Component<{}, NavigationAuthState> {
     constructor(props: any) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
@@ -27,7 +28,7 @@ class HeaderNavNonAuth extends React.Component<{}, HeaderNavNonAuthState> {
     render() {
 
         return (
-            <div className='nakul-header'>
+            <div className='nakul-top-left'>
                 <div className="nakul-logo">
                     <HamburgerMenu
                         isOpen={this.state.open}
@@ -43,24 +44,11 @@ class HeaderNavNonAuth extends React.Component<{}, HeaderNavNonAuthState> {
 
                 </div>
 
-                <div className='header-action'>
+                { this.state.open && <SideBar />}
 
-                    <Link to={routes.HOME} style={{ textDecoration: 'none' }}>
-                        <div className="header-item-text">
-                            <p>Home</p>
-                        </div>
-                    </Link>
-
-                    <Link to={routes.RESUME} style={{ textDecoration: 'none' }}>
-                        <div className="header-item-text">
-                            <p>Resume</p>
-                        </div>
-                    </Link>
-
-                </div>
             </div>
         );
     }
 }
 
-export default HeaderNavNonAuth;
+export default NavigationNonAuth;

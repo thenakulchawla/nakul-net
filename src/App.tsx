@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as routes from './const/routes';
-import HeaderNav from './HeaderNav';
+import HeaderNav from './Navigation';
 import { Home } from './Home';
 import { Project } from './Project';
 import { Resume } from './Resume';
@@ -21,13 +21,7 @@ class AppComponent extends React.Component {
           <HeaderNav />
         </div>
 
-        {/* <div className="nakul-row">
-          <div>
-
-            <SideBar />
-
-          </div> */}
-        <div>
+        <div className="fixed-top">
           <Switch>
             <Route exact={true} path={routes.HOME} component={Home} />
             <Route exact={true} path={routes.RESUME} component={Resume} />
