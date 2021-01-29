@@ -12,8 +12,8 @@ class HomeComponent extends React.Component {
         super(props);
         this.navigateToGithub = this.navigateToGithub.bind(this);
         this.navigateToFacebook = this.navigateToFacebook.bind(this);
-        this.navigateToTwitter = this.navigateToFacebook.bind(this);
-        this.navigateToStackoverflow = this.navigateToFacebook.bind(this);
+        this.navigateToTwitter = this.navigateToTwitter.bind(this);
+        this.navigateToStackoverflow = this.navigateToStackoverflow.bind(this);
         this.navigateToLinkedin = this.navigateToLinkedin.bind(this);
         this.navigateToMail = this.navigateToMail.bind(this);
         this.openInNewTab = this.openInNewTab.bind(this);
