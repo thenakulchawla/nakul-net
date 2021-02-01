@@ -44,7 +44,7 @@ class NavigationNonAuth extends React.Component<{}, NavigationAuthState> {
 
                 </div>
 
-                { this.state.open && <SideBar />}
+                { this.state.open && <SideBar open={this.state.open} handleClick={this.handleClick} />}
 
             </div>
         );

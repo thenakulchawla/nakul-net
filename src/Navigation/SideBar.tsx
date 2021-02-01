@@ -5,36 +5,49 @@ import * as routes from '../const/routes';
 import { Link } from 'react-router-dom';
 // import { withAuthorization } from '../firebase/withAuthorization';
 
-const SideBarComponent = () => {
+interface SideBarProps {
+    open: boolean;
+    handleClick: any;
+}
 
-    return (
-        <div className="sidebar">
 
-            <List disablePadding dense>
-                <div className="sidebar-item">
-                    <ListItem key='home' button>
-                        <div className="sidebar-item-content">
-                            <Link to={routes.HOME} style={{ textDecoration: 'none' }}>
-                                <div className="sidebar-item-text">Home</div>
-                            </Link>
-                        </div>
-                    </ListItem>
-                </div>
-                <div className="sidebar-item">
-                    <ListItem key='resume' button>
-                        <div className="sidebar-item-content">
-                            <Link to={routes.RESUME} style={{ textDecoration: 'none' }}>
-                                <div className="sidebar-item-text">
-                                    Resume
+class SideBarComponent extends React.Component<SideBarProps, {}> {
+    constructor(props: any) {
+        super(props);
+    }
+
+    render() {
+
+        return (
+            <div style={{ display: this.props.open ? 'block' : 'none' }}>
+                <div className="sidebar">
+                    <List disablePadding dense>
+                        <div className="sidebar-item">
+                            <ListItem key='home' button>
+                                <div className="sidebar-item-content">
+                                    <Link to={routes.HOME} style={{ textDecoration: 'none' }}>
+                                        <div onClick={this.props.handleClick} className="sidebar-item-text">Home</div>
+                                    </Link>
                                 </div>
-                            </Link>
+                            </ListItem>
                         </div>
-                    </ListItem>
-                </div>
+                        <div className="sidebar-item">
+                            <ListItem key='resume' button>
+                                <div className="sidebar-item-content">
+                                    <Link to={routes.RESUME} style={{ textDecoration: 'none' }}>
+                                        <div onClick={this.props.handleClick} className="sidebar-item-text">
+                                            Resume
+                                </div>
+                                    </Link>
+                                </div>
+                            </ListItem>
+                        </div>
 
-            </List>
-        </div>
-    );
+                    </List>
+                </div>
+            </div>
+        );
+    }
 
 }
 

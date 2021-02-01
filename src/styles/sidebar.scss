@@ -1,7 +1,7 @@
 .sidebar {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 1vh;
+  // border-radius: 1vh;
   margin-left: 0;
   margin-top: 0;
   font-size: $sidebar-font-size;
@@ -9,6 +9,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   background-color: black;
+  position: relative;
 }
 
 .sidebar-item {
