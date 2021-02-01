@@ -1,10 +1,15 @@
 .sidebar {
-  width: $sidebar-width;
+  width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 1vh;
-  margin-left: $left-sidebar-left-margin;
-  margin-top: $sidebar-margin-top;
+  // border-radius: 1vh;
+  margin-left: 0;
+  margin-top: 0;
   font-size: $sidebar-font-size;
+  z-index: 1000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: black;
+  position: relative;
 }
 
 .sidebar-item {
@@ -20,13 +25,13 @@
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #FFFEFC;
+  background-color: black;
 }
 
 .sidebar-item-text {
   width: 100%;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .sidebar-item-expand-arrow {
