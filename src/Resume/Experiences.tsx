@@ -17,9 +17,10 @@ export const Experiences = () => {
                                 <span className="padding-right-2px">Payments Fraud Disruption</span>
                             </div>
                             <ul>
-                                <li>Designing and developing Java applications for fraud detection which subscribes to live payment transactions feed.</li>
+                                <li>Aggregating data on live transaction feed of data in in-memory rocks db.</li>
                                 <li>Developed angular front end UIs to understand the data and create rules for systems to flag transactions as fraud.</li>
-                                <li>Designing a scalable micro-service architecture for hosting on-demand configurations for the above fraud detection applications.</li>
+                                <li>Designed and deployed data processors that can handle the aggregation on live transaction feed in real time and queues fraud events.</li>
+                                <li>Designed and developed an event generating system that sends emails and other events to other systems for communication.</li>
                             </ul>
                         </li>
                     </ul>
