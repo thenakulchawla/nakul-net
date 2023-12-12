@@ -8,7 +8,30 @@ export const Experiences = () => {
                 <div className="meta">
                     <div className="upper-row">
                         <h3 className="job-title">Sr. Software Engineer</h3>
-                        <div className="time">09/2019 - present</div>
+                        <div className="time">11/2021 - present</div>
+                    </div>
+                    <div className="company">Cruise</div>
+                    {/*<ul>*/}
+                    {/*    <li>*/}
+                    {/*        <div className='emp-project-title'>*/}
+                    {/*            <span className="padding-right-2px">Payments Fraud Disruption</span>*/}
+                    {/*        </div>*/}
+                    {/*        <ul>*/}
+                    {/*            <li>Aggregating data on live transaction feed of data in in-memory rocks db.</li>*/}
+                    {/*            <li>Developed angular front end UIs to understand the data and create rules for systems to flag transactions as fraud.</li>*/}
+                    {/*            <li>Designed and deployed data processors that can handle the aggregation on live transaction feed in real time and queues fraud events.</li>*/}
+                    {/*            <li>Designed and developed an event generating system that sends emails and other events to other systems for communication.</li>*/}
+                    {/*        </ul>*/}
+                    {/*    </li>*/}
+                    {/*</ul>*/}
+                </div>
+            </div>
+
+            <div className="item">
+                <div className="meta">
+                    <div className="upper-row">
+                        <h3 className="job-title">Sr. Software Engineer</h3>
+                        <div className="time">09/2019 - 11/2021</div>
                     </div>
                     <div className="company">Visa</div>
                     <ul>

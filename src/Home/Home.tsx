@@ -1,6 +1,6 @@
 import React from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { Facebook, LinkedIn, Mail, Twitter } from '@material-ui/icons';
+import { LinkedIn, Mail, Twitter } from '@material-ui/icons';
 import { Icon } from '@material-ui/core';
 import { Footer } from '../Footer';
 
@@ -9,7 +9,6 @@ class HomeComponent extends React.Component {
     constructor(props: any) {
         super(props);
         this.navigateToGithub = this.navigateToGithub.bind(this);
-        this.navigateToFacebook = this.navigateToFacebook.bind(this);
         this.navigateToTwitter = this.navigateToTwitter.bind(this);
         this.navigateToStackoverflow = this.navigateToStackoverflow.bind(this);
         this.navigateToLinkedin = this.navigateToLinkedin.bind(this);
@@ -24,10 +23,6 @@ class HomeComponent extends React.Component {
 
     navigateToGithub() {
         this.openInNewTab("https://github.com/thenakulchawla/")
-    }
-
-    navigateToFacebook() {
-        this.openInNewTab("https://www.facebook.com/thenakulchawla")
     }
 
     navigateToStackoverflow() {
@@ -65,9 +60,6 @@ class HomeComponent extends React.Component {
                     </div>
                     <div className="icon" onClick={this.navigateToMail}>
                         <Mail />
-                    </div>
-                    <div className="icon" onClick={this.navigateToFacebook}>
-                        <Facebook />
                     </div>
                     <div className="icon" onClick={this.navigateToTwitter}>
                         <Twitter />
