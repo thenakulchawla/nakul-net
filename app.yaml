@@ -1,15 +1,4 @@
-runtime: nodejs12
-
-env_variables:
- # Replace the variables
- FIREBASE_APIKEY: "AIzaSyCtQmDp3BshTYh28MH2Bj1WNFT0ox0qNLw"
- FIREBASE_AUTHDOMAIN: "nakulchawla.firebaseapp.com"
- FIREBASE_DATABASEURL: <FIREBASE_DATABASEURL>
- FIREBASE_PROJECTID: "nakulchawla"
- FIREBASE_STORAGEBUCKET: "nakulchawla.appspot.com"
- FIREBASE_MESSAGINGSENDERID: "245180881293"
- FIREBASE_APPID: "1:245180881293:web:236c38a7450efd870cc5c4"
- FIREBASE_MEASUREMENTID: "G-GNTYF2CK0F"
+runtime: nodejs18
 
 handlers:
   - url: /static

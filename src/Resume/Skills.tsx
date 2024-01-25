@@ -14,10 +14,25 @@ class SkillsComponent extends React.Component {
                 <h2 className="section-title"><i className="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
 
                 <div className="skillset">
+
+                    <div className="item">
+                        <h3 className="level-title">Deduplication, scheduling, graph</h3>
+                        <div className="level-bar">
+                            <div className="level-bar-inner-80"></div>
+                        </div>
+                    </div>
+
+
+                    <div className="item">
+                        <h3 className="level-title">Golang, kubernetes</h3>
+                        <div className="level-bar">
+                            <div className="level-bar-inner-80"></div>
+                        </div>
+                    </div>
                     <div className="item">
                         <h3 className="level-title">C++, C</h3>
                         <div className="level-bar">
-                            <div className="level-bar-inner-80"></div>
+                            <div className="level-bar-inner-70"></div>
                         </div>
                     </div>
 
@@ -29,7 +44,7 @@ class SkillsComponent extends React.Component {
                     </div>
 
                     <div className="item">
-                        <h3 className="level-title">Typescript, Javascript, React, Angular</h3>
+                        <h3 className="level-title">Typescript, Javascript, React</h3>
                         <div className="level-bar">
                             <div className="level-bar-inner-70" > </div>
                         </div>

@@ -11,19 +11,18 @@ export const Experiences = () => {
                         <div className="time">11/2021 - present</div>
                     </div>
                     <div className="company">Cruise</div>
-                    {/*<ul>*/}
-                    {/*    <li>*/}
-                    {/*        <div className='emp-project-title'>*/}
-                    {/*            <span className="padding-right-2px">Payments Fraud Disruption</span>*/}
-                    {/*        </div>*/}
-                    {/*        <ul>*/}
-                    {/*            <li>Aggregating data on live transaction feed of data in in-memory rocks db.</li>*/}
-                    {/*            <li>Developed angular front end UIs to understand the data and create rules for systems to flag transactions as fraud.</li>*/}
-                    {/*            <li>Designed and deployed data processors that can handle the aggregation on live transaction feed in real time and queues fraud events.</li>*/}
-                    {/*            <li>Designed and developed an event generating system that sends emails and other events to other systems for communication.</li>*/}
-                    {/*        </ul>*/}
-                    {/*    </li>*/}
-                    {/*</ul>*/}
+                    <ul>
+                        <li>Optimized a high-volume data ingest pipeline, reliably processing 5-7TB daily into BigQuery, 
+                            enhancing system reliability and resource efficiency, resulting in significant cost reductions. </li>
+                        <li>Designed and implemented an in-queue and in-flight compute deduplication framework, 
+                            proactively preventing the scheduling of duplicate tasks, 
+                            thereby achieving substantial cost savings and significantly enhancing operational efficiency.</li>
+                        <li>Scalability and reliability: Developed a GRPC streaming-based load testing framework with k6 to model system behavior under peak loads.</li>
+                        <li>Established a pre-deployment testing pipeline for custom silicon clients, enhancing platform reliability.</li>
+                        <li>Engineered a vertical scaling solution with a DAG-based intelligent batching system that optimized downloads 
+                            and compute utilization, yielding significant time savings and cost reduction.</li>
+                    </ul>
+                 
                 </div>
             </div>
 

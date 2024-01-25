@@ -2,10 +2,9 @@
 
 npm run build
 tar czf build.tar.gz build
-ipaddress='192.168.86.210'
 
-scp build.tar.gz storageWorker@$ipaddress:~/
+scp build.tar.gz kulcha@rpi1.local:~/
 sleep 5
-ssh storageWorker@$ipaddress "pkill -f serve"
-ssh storageWorker@$ipaddress "tar zxf build.tar.gz | serve -s build"
+ssh kulcha@rpi1.local "pkill -f serve"
+ssh kulcha@rpi1.local "tar zxf build.tar.gz | serve -s build"
 

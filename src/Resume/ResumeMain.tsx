@@ -14,9 +14,9 @@ class ResumeMainComponent extends React.Component {
 
         return (
             <div className="main-wrapper">
-                <Publications />
                 <Experiences />
                 <Projects />
+                <Publications />
                 <Skills />
             </div>
         )

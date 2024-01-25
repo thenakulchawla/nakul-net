@@ -1,8 +1,7 @@
 import React from 'react'
-import GitHubIcon from '@material-ui/icons/GitHub';
-import { LinkedIn, Mail, Twitter } from '@material-ui/icons';
-import { Icon } from '@material-ui/core';
+import { LinkedIn, Mail, Twitter, GitHub } from '@mui/icons-material';
 import { Footer } from '../Footer';
+import { Icon } from '@mui/material';
 
 
 class HomeComponent extends React.Component {
@@ -38,7 +37,7 @@ class HomeComponent extends React.Component {
     }
 
     navigateToMail() {
-        this.openInNewTab("mailto:msg@nakul.net")
+        this.openInNewTab("mailto:thenakulchawla@gmail.com")
     }
 
     render() {
@@ -56,7 +55,7 @@ class HomeComponent extends React.Component {
                         <LinkedIn />
                     </div>
                     <div className="icon" onClick={this.navigateToGithub}>
-                        <GitHubIcon />
+                        <GitHub />
                     </div>
                     <div className="icon" onClick={this.navigateToMail}>
                         <Mail />

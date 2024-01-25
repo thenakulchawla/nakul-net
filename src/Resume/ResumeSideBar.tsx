@@ -21,8 +21,8 @@ class ResumeSideBarComponent extends React.Component {
 
                 <div className="contact-container container-block">
                     <ul className="list-unstyled contact-list">
-                        <li className="email"><i className="fa fa-envelope"></i><a href="mailto: msg@nakul.net">msg@nakul.net</a></li>
-                        <li className="linkedin"><i className="fa fa-linkedin"></i><a href="https://linkedin.com/in/thenakulchawl"
+                        <li className="email"><i className="fa fa-envelope"></i><a href="mailto: thenakulchawla@gmail.com">thenakulchawla@gmail.com</a></li>
+                        <li className="linkedin"><i className="fa fa-linkedin"></i><a href="https://linkedin.com/in/thenakulchawla"
                             target="_blank">thenakulchawla</a></li>
                         <li className="github"><i className="fa fa-github"></i><a href="http://github.com/thenakulchawla"
                             target="_blank">thenakulchawla</a></li>
@@ -51,12 +51,8 @@ class ResumeSideBarComponent extends React.Component {
                 <div className="interests-container container-block">
                     <h2 className="container-block-title">Interests</h2>
                     <ul className="list-unstyled interests-list">
-                        <li>Blockchain</li>
-                        <li>Badminton</li>
                         <li>Distributed System</li>
-                        <li>Cryptocurrency</li>
-
-
+                        <li>Badminton</li>
                     </ul>
                 </div>
 

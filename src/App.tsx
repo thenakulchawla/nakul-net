@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import * as routes from './const/routes';
 import HeaderNav from './Navigation';
 import { Home } from './Home';
@@ -22,11 +22,11 @@ class AppComponent extends React.Component {
         </div>
 
         <div className="fixed-top">
-          <Switch>
-            <Route exact={true} path={routes.HOME} component={Home} />
-            <Route exact={true} path={routes.RESUME} component={Resume} />
-            <Route exact={true} path={routes.PROJECT} component={Project} />
-          </Switch>
+          <Routes>
+            <Route path={routes.HOME} element={<Home />} />
+            <Route path={routes.RESUME} element={<Resume />} />
+            <Route path={routes.PROJECT} element={<Project />} />
+          </Routes>
 
         </div>
 
